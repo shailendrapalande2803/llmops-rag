@@ -1,0 +1,17 @@
+name: rag_answer
+version: 1.0.0
+description: Answer a user question from retrieved document chunks
+input_variables:
+  - context
+  - question
+template: |
+  Use the context below to answer the question.
+
+  Context:
+  {context}
+
+  Question:
+  {question}
+
+  Answer in at most three sentences. Cite the source of each fact
+  when the context provides one.

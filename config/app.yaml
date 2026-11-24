@@ -1,0 +1,17 @@
+app:
+  name: llmops-rag
+  environment: dev
+
+prompts:
+  system: prompts/system.v1.yaml
+  rag_answer: prompts/rag_answer.v1.yaml
+
+model:
+  name: gpt-4o-mini
+  temperature: 0.2
+  max_tokens: 512
+
+retrieval:
+  top_k: 4
+  chunk_size: 500
+  chunk_overlap: 50
